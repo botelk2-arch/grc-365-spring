@@ -4,7 +4,10 @@
 <meta charset="utf-8">
 <title>portfolio</title>
 <style>
-	body {
+    @font-face {
+        font-family: Georgia.ttf;
+        src: url(Georgia.ttf);
+    } body {
 		background: whitesmoke;
 	} #page {
 		width: 928px;
@@ -12,18 +15,45 @@
 		background: white;
 		margin: 24px auto;
 		border: 1px solid darkgray;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start
+    } h1 {
+        text-align: center;
 	} #page div {
 		width: 150px;
 		height: 150px;
 		background: lightblue;
 		font: bold 36pt/1.4em Roboto;
-	}
+    } .thumb {
+        width: 200px;
+        height: auto;
+    } figure {
+        width: 200px;
+    } figcaption {
+        font: 12pt/1.4em Georgia;
+    }
 </style>
 </head>
 
 <body>
+    <h1>Portfolio</h1>
 	<div id="page">
-		<img src=""
+        <figure>
+        <a href="zoey-pic.jpg">
+		<img class="thumb" src="thumb-zoey-pic.jpg" />
+        </a>
+        <figcaption>“Zoey,” digital drawing in Adobe Illustrator</figcaption>
+        </figure>
+        <figure>
+        <a href="tom.jpg">
+		<img class="thumb" src="tom-thumb.jpg" />
+        </a>
+        <figcaption>“Tom,” digital drawing in Adobe Illustrator</figcaption>
+        </figure>
+        
 	</div>
 </body>
 </html>
